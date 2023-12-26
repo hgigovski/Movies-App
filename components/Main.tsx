@@ -23,9 +23,9 @@ const Main = () => {
 
   return (
     <div className='px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols3'>
-      {movies.map((x: any) => (
-        <Thumbnail movie={x} />
-      ))}
+  {movies.map((movie: any) => (
+  <Thumbnail key={movie['movie-index']} movie={movie} />
+))}
     </div>
   )
 }
